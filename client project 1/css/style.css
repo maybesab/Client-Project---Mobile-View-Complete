@@ -1,0 +1,145 @@
+/* === Base Setup === */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #1c1c1c;
+    line-height: 1.6;
+    padding: 0 5%;
+  }
+  
+  /* === Skip Link === */
+  .skip {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #00274C;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .skip:focus {
+    top: 0;
+  }
+  
+  /* === Header === */
+  header {
+    padding: 1rem 0;
+    background-color: #00274C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid #FFCB05;
+    text-align: center;
+  }
+  
+  header img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+  }
+  
+  /* === Navigation === */
+  nav {
+    width: 100%;
+    background-color: #00274C;
+    padding: 0.5rem 0;
+  }
+  
+  nav ul.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover,
+  nav a:focus {
+    background-color: #FFCB05;
+    color: #00274C;
+    border-color: #FFCB05;
+  }
+  
+  nav a.active {
+    background-color: #FFCB05;
+    color: #00274C;
+    border: 3px solid #00274C;
+  }
+  
+  /* === Main Content === */
+  main {
+    padding: 1.5rem 0;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h1, h2, h3 {
+    color: #00274C;
+  }
+  
+  p, li {
+    font-size: 1.1rem;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* === Responsive Grid === */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* === Footer === */
+  footer {
+    background-color: #00274C;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    border-top: 3px solid #FFCB05;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+  }
+  
+  footer a {
+    color: #FFCB05;
+    text-decoration: underline;
+    font-weight: 500;
+  }
